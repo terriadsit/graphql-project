@@ -1,5 +1,5 @@
 // placeholder for products model
-module.exports = [
+const products = [
   {
     id: 'redshoe',
     description: 'Red Shoe',
@@ -11,3 +11,11 @@ module.exports = [
     price: 55.55
   }
 ]
+
+function getAllProducts() {
+  return products;
+}
+
+module.exports = {
+  getAllProducts,
+}
